@@ -1,0 +1,17 @@
+.cuadricula{
+    width: 100%;
+    height: auto;
+    background-color: beige;
+    padding: 3rem;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: space-evenly;
+    
+}
+
+.elemento{
+    width: 200px;
+    height: 200px;
+}

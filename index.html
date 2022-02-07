@@ -45,33 +45,53 @@
   <!-- End Google Tag Manager (noscript) -->
 
   <div class="cuadricula">
-  <div id="Rings">
+  <div id="Ring">
     <section class="attribution">
       <span>
         <h1>3D Spin Rings</h1>
         <span>By ---</span>
       </span>
     </section>
+    <div id ="anillo">
     <!-- All you need to put beautiful, interactive 3D content on your site: -->
-    <model-viewer src="https://cdn.glitch.com/25ee8113-90ae-41db-b783-fbbab7de2fc3%2FScene.glb?v=1592251067411"
+    <model-viewer id='Rings'
+                  src="https://cdn.glitch.com/25ee8113-90ae-41db-b783-fbbab7de2fc3%2FScene.glb?v=1592251067411"
                   ios-src="https://cdn.glitch.com/25ee8113-90ae-41db-b783-fbbab7de2fc3%2FSpinning_Rings.usdz?v=1592249454231"
                   alt="A 3D model of a spin rings"
                   shadow-intensity="0.5"
                   camera-controls
                   interaction-prompt="auto"
                   auto-rotate ar magic-leap>
-    </model-viewer>    
+    </model-viewer>
+    <script>
+     
+      const modelViewer = document.getElementById('Rings')
+      const modelChilds= modelViewer.childNodes
+      var hijo = modelChilds[0].parentElement
+      var nodo = hijo.parentNode
+      var canvas = nodo["Symbol(canvas)"]
+      var canba = nodo.childNodes[3]["Symbol(canvas)"]
+      console.log(modelChilds)
+      console.log(hijo)
+      console.log(nodo)
+      console.log(canvas)
+      console.log(canba)
+      
+    </script>
+    </div>
   </div>
 
-  <div id="Pool">
+  <div class="elemento">
     <section class="attribution">
       <span>
         <h1>3D Pool</h1>
         <span>By ---</span>
       </span>
     </section>
+    <div id="Piscina">
     <!-- All you need to put beautiful, interactive 3D content on your site: -->
-    <model-viewer src="piscina_2.glb"
+    <model-viewer id="Pool"
+                  src="piscina_2.glb"
                   ios-src="piscina_2ios.usdz"
                   alt="A 3D model Pool"
                   shadow-intensity="0.5"
@@ -79,17 +99,20 @@
                   interaction-prompt="auto"
                   auto-rotate ar magic-leap>
     </model-viewer>
+    </div>
   </div>
 
-  <div id="Chair">
+  <div class="elemento">
     <section class="attribution">
       <span>
         <h1>3D Pergolesi Chair</h1>
         <span>By ---</span>
       </span>
     </section>
+    <div id="Silla">
     <!-- All you need to put beautiful, interactive 3D content on your site: -->
-    <model-viewer src="Silla_Pergoles.glb"
+    <model-viewer id="Chair"
+                  src="Silla_Pergoles.glb"
                   ios-src="Silla_Per_iOs.usdz"
                   alt="A 3D model of an chair"
                   shadow-intensity="0.5"
@@ -97,17 +120,20 @@
                   interaction-prompt="auto"
                   auto-rotate ar magic-leap>
     </model-viewer>
+    </div>
   </div>
 
-  <div id="Wall">
+  <div class="elemento">
     <section class="attribution">
       <span>
         <h1>3D Wall</h1>
         <span>By ---</span>
       </span>
     </section>
+    <div id="Muro">
     <!-- All you need to put beautiful, interactive 3D content on your site: -->
-    <model-viewer src="Muro_1.glb"
+    <model-viewer id="Wall"
+                  src="Muro_1.glb"
                   ios-src="Muro_1_iOs.usdz"
                   alt="A 3D model of a wall"
                   shadow-intensity="0.5"
@@ -115,17 +141,20 @@
                   interaction-prompt="auto"
                   auto-rotate ar magic-leap>
     </model-viewer>
+    </div>
   </div>
 
-  <div id="Floor">
+  <div class="elemento">
     <section class="attribution">
       <span>
         <h1>3D Floor</h1>
         <span>By ---</span>
       </span>
     </section>
+    <div id="Piso">
     <!-- All you need to put beautiful, interactive 3D content on your site: -->
-    <model-viewer src="Piso_1.glb"
+    <model-viewer id="Floor"
+                  src="Piso_1.glb"
                   ios-src="Piso_1_iOs.usdz"
                   alt="A 3D model of a floor"
                   shadow-intensity="0.5"
@@ -133,17 +162,20 @@
                   interaction-prompt="auto"
                   auto-rotate ar magic-leap>
     </model-viewer>
+    </div>
   </div>
 
-  <div id="Gate">
+  <div class="elemento">
     <section class="attribution">
       <span>
         <h1>3D Gate</h1>
         <span>By ---</span>
       </span>
     </section>
+    <div id="Puerta">
     <!-- All you need to put beautiful, interactive 3D content on your site: -->
-    <model-viewer src="Puerta.glb"
+    <model-viewer id="Gate"
+                  src="Puerta.glb"
                   ios-src="Puerta_iOs.usdz"
                   alt="A 3D model of a floor"
                   shadow-intensity="0.5"
@@ -151,6 +183,7 @@
                   interaction-prompt="auto"
                   auto-rotate ar magic-leap>
     </model-viewer>
+    </div>
   </div>
 
 
